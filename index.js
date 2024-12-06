@@ -26,10 +26,10 @@ app.use("/", profileRoutes.router);
 app.use("/", commentRoutes.router);
 app.use("/", paymentRoutes.app);
 
-// app.listen(process.env.PORT, () => {
-//   connectToDatabase();
-//   console.log("listening to port " + process.env.PORT);
-// });
+app.listen(process.env.PORT, () => {
+  connectToDatabase();
+  console.log("listening to port " + process.env.PORT);
+});
 
-connectToDatabase();
+// connectToDatabase();
 module.exports = app;
